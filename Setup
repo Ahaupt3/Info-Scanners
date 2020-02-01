@@ -1,0 +1,15 @@
+#!/bin/bash
+# Setup
+# Execute as SUDO
+
+DIRS='/bin /usr/bin'
+
+# Move files to /bin /usr/bin
+
+echo $DIRS | xargs -n 1 cp -v $(ls /Dependencies)
+
+echo $DIRS | xargs -n 1 cp -v $(ls /Scripts)
+
+echo '***SETUP FINISHED***'
+
+exit 0

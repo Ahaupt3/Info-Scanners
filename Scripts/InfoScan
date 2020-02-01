@@ -19,3 +19,7 @@ mkdir $IP/Exploits $IP/Findings $IP/Scans
 
 cd Scans
 nmapAutomator $IP All
+
+echo '***SCANS COMPLETE***'
+
+exit 0
