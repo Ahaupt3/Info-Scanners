@@ -12,14 +12,14 @@ usage(){
 	exit 1
 }
 
-IP = $1
+IP=$1
 
 mkdir $IP
-mkdir $IP/Exploits $IP/Findings $IP/Scans
+mkdir $IP/Exploits $IP/Findings $IP/Scans/nmapAutomator
 
-cd Scans
+cd $IP/Scans/nmapAutomator
 nmapAutomator $IP All
 
-echo '***SCANS COMPLETE***'
+echo -e '***SCANS COMPLETE***'
 
 exit 0

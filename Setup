@@ -6,10 +6,10 @@ DIRS='/bin /usr/bin'
 
 # Move files to /bin /usr/bin
 
-echo $DIRS | xargs -n 1 cp -v $(ls /Dependencies)
+echo -e $DIRS | xargs -n 1 cp -v $(ls /Dependencies)
 
-echo $DIRS | xargs -n 1 cp -v $(ls /Scripts)
+echo -e $DIRS | xargs -n 1 cp -v $(ls /Scripts)
 
-echo '***SETUP FINISHED***'
+echo -e '***SETUP FINISHED***'
 
 exit 0

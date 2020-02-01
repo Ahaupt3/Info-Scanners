@@ -7,14 +7,7 @@ GREEN='\033[0;32m'
 
 usage(){
 	echo -e "${RED}Usage: $0 <TARGET-IP>"
-    echo -e "${RED}Requires:"
-    echo -e "${GREEN}nbtscan"
-    echo -e "${GREEN}nmblookup"
-    echo -e "${GREEN}enum4linux"
-    echo -e "${GREEN}smbmap"
-    echo -e "${GREEN}smbclient"
-    echo -e "${GREEN}rpcclient"
-    echo -e "${GREEN}nmap"
+
 	exit 1
 }
 
