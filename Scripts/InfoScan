@@ -45,7 +45,7 @@ done
 mkdir $IP/Scans/nmapAutomator
 cd $IP/Scans/nmapAutomator
 nmapAutomator $IP All
-errCheck
+$errCheck
 
 echo -e '*** ALL SCANS COMPLETE ***'
 
