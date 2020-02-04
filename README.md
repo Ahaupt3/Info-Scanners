@@ -12,13 +12,13 @@ Creates basic directory structure for storing notes during an engagement. Best s
 * nmapAutomator (included in dependencies)
 
 ## SMBScan
-* nbtscan
-* nmblookup
 * enum4linux
-* smbmap
-* smbclient
-* rpcclient
+* nbtscan
 * nmap
+* nmblookup
+* rpcclient
+* smbclient
+* smbmap
 
 # Setup/Workflow
 1) Clone Repo

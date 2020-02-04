@@ -21,6 +21,6 @@ DIR='Scripts'
 echo -e $DIRS | xargs -n 1 cp -v $(ls /Scripts)
 errCheck
 
-echo -e '***SETUP FINISHED***'
+echo -e '*** SETUP FINISHED ***'
 
 exit 0
