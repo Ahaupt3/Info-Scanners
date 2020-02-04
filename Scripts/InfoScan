@@ -47,6 +47,6 @@ cd $IP/Scans/nmapAutomator
 nmapAutomator $IP All
 errCheck
 
-echo -e '***ALL SCANS COMPLETE***'
+echo -e '*** ALL SCANS COMPLETE ***'
 
 exit 0
