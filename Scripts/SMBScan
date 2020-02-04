@@ -37,6 +37,8 @@ fi
 
 cd $IP/Scans/SMB
 
+# Optimize in future by using a loop to iterate cmds & save files
+
 echo -e "${RED}Running nbtscan..."
 FILENAME=nbtscan.txt
 nbtscan -r $IP/24 >> $FILENAME
