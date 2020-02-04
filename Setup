@@ -14,13 +14,18 @@ errCheck(){
 # Move files to /bin /usr/bin
 
 DIR='Dependencies'
-echo -e $DIRS | xargs -n 1 cp -v $(ls /Dependencies)
-errCheck
+cd $DIR
+echo -e $DIRS | xargs -n 1 cp -vr *
+$errCheck
+cd ..
 
 DIR='Scripts'
-echo -e $DIRS | xargs -n 1 cp -v $(ls /Scripts)
-errCheck
+cd $DIR
+echo -e $DIRS | xargs -n 1 cp -vr *
+$errCheck
+cd ..
 
-echo -e '*** SETUP FINISHED ***'
+echo -e '***  SETUP FINISHED  ***'
+echo -e '*** RESTART TERMINAL ***'
 
 exit 0

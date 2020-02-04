@@ -22,9 +22,16 @@ Creates basic directory structure for storing notes during an engagement. Best s
 
 # Setup/Workflow
 1) Clone Repo
-2) Run 'Setup' script w/ sudo to setup dependencies.
+2) Run 'sudo ./Setup' setup scripts & dependencies.
 3) Run 'InfoScan' script.
-4) Run additional enumeration scripts dependent on findings.
+4) Run additional enumeration scripts dependent on findings. (full-automation planned)
+
+# Script Usage
+## InfoScan
+InfoScan <IP>
+
+## SMBScan
+SMBScan <IP>
 
 # Credits
 https://github.com/21y4d/nmapAutomator (modified version used)
