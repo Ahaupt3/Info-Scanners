@@ -28,10 +28,10 @@ Creates basic directory structure for storing notes during an engagement. Best s
 
 # Script Usage
 ## InfoScan
-InfoScan <IP>
+InfoScan \<IP\>
 
 ## SMBScan
-SMBScan <IP>
+SMBScan \<IP\>
 
 # Credits
 https://github.com/21y4d/nmapAutomator (modified version used)
