@@ -11,58 +11,60 @@ usage(){
 	exit 1
 }
 
-IP = $1
+IP=$1
 
 mkdir $IP/Scans/SMB
 cd $IP/Scans/SMB
 
 errCheck(){
-    if $? != 0
+    if $? != 0; then
         echo -e "${RED}Error occurred, moving on..."
-    else echo -e "${GREEN}Saved to $filename"
+    else echo -e "${GREEN}Saved to $FILENAME"
     fi
 }
 
 echo -e "${RED}Running nbtscan..."
-filename = nbtscan.txt
-nbtscan -r $IP/24 >> $filename
+FILENAME=nbtscan.txt
+nbtscan -r $IP/24 >> $FILENAME
 errCheck
 
 echo -e "${RED}Running nmblookup..."
-filename = nmblookup.txt
-nmblookup -A $IP >> $filename
+FILENAME=nmblookup.txt
+nmblookup -A $IP >> $FILENAME
 errCheck
 
 echo -e "${RED}Running enum4linux..."
-filename = nmblookup.txt
-enum4linux -a $IP >> $filename
-enum4linux -o $IP >> $filename
+FILENAME=enum4linux.txt
+enum4linux -a $IP >> $FILENAME
+enum4linux -o $IP >> $FILENAME
 errCheck
 
 echo -e "${RED}Running smbmap..."
-filename = smbmap.txt
-smbmap -H $IP >> $filename
+FILENAME=smbmap.txt
+smbmap -H $IP >> $FILENAME
 errCheck
 
 echo -e "${RED}Running smbclient..."
-filename = smbclient.txt
-smbclient -L $IP >> $filename
+FILENAME=smbclient.txt
+smbclient -L $IP >> $FILENAME
 errCheck
 
 echo -e "${RED}Running rpcclient enumdomusers..."
-filename = rpcclient.txt
-bash -c "echo 'enumdomusers' | rpcclient -U '' -N $IP" >> $filename
+FILENAME=rpcclient.txt
+bash -c "echo 'enumdomusers' | rpcclient -U '' -N $IP" >> $FILENAME
 errCheck
 
 echo -e "${RED}Running nmap..."
-filename = nmap.txt
-nmap --script smb-enum-shares -p 139,445 $IP >> $filename
+FILENAME=nmap.txt
+nmap --script smb-enum-shares -p 139,445 $IP >> $FILENAME
 errCheck
 
 echo -e "${RED}Checking for Vulnerabilities..."
-filename = vulns.txt
-nmap --script smb-vuln* -p 139,445 $IP >> $filename
-echo "*******************************\n" >> $filename
+FILENAME=vulns.txt
+nmap --script smb-vuln* -p 139,445 $IP >> $FILENAME
+echo "*******************************\n" >> $FILENAME
 errCheck
 
 echo -e "${GREEN}*** ALL SCANS COMPLETE ***"
+
+exit 0

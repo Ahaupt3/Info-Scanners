@@ -4,11 +4,22 @@
 
 DIRS='/bin /usr/bin'
 
+errCheck(){
+    if $? != 0; then
+        echo -e "${RED}Error occurred, couldn't copy to $DIR"
+    else echo -e "${GREEN}Copied $DIR successfully!"
+    fi
+}
+
 # Move files to /bin /usr/bin
 
+DIR='Dependencies'
 echo -e $DIRS | xargs -n 1 cp -v $(ls /Dependencies)
+errCheck
 
+DIR='Scripts'
 echo -e $DIRS | xargs -n 1 cp -v $(ls /Scripts)
+errCheck
 
 echo -e '***SETUP FINISHED***'
 

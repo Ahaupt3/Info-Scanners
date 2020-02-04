@@ -4,22 +4,49 @@
 RED='\033[0;31m'
 YELLOW='\033[0;33m'
 GREEN='\033[0;32m'
+IP=$1
+DIRS=('Exploits' 'Findings' 'Scans')
 
 usage(){
 	echo -e "${RED}Usage: $0 <TARGET-IP>"
-    echo -e "${RED}Requires:"
-    echo -e "{GREEN}https://github.com/21y4d/nmapAutomator"
 	exit 1
 }
 
-IP=$1
+errCheck(){
+    if $? != 0; then
+        echo -e "${RED}Error occurred, moving on..."
+    else echo -e "${GREEN}$0 Scan Successful!"
+    fi
+}
 
-mkdir $IP
-mkdir $IP/Exploits $IP/Findings $IP/Scans/nmapAutomator
+if (( "$#" != 1 )); then
+	usage
+fi
 
+if [[ $1 =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+	:
+else
+	echo -e "${RED}"
+	echo -e "${RED}Invalid IP!"
+	echo -e "${RED}"
+	usage
+fi
+
+if [[ ! -d $1 ]]; then
+    mkdir $IP
+fi
+
+for d in ${DIRS[@]}; do
+    if [[ ! -d $d ]]; then
+        mkdir $IP/$d
+    fi
+done
+
+mkdir $IP/Scans/nmapAutomator
 cd $IP/Scans/nmapAutomator
 nmapAutomator $IP All
+errCheck
 
-echo -e '***SCANS COMPLETE***'
+echo -e '***ALL SCANS COMPLETE***'
 
 exit 0
