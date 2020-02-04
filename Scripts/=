@@ -1,138 +1,0 @@
-Script started on 2020-01-31 18:50:28-08:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="74" LINES="38"]
-[1m[7m%[27m[1m[0m                                                                          ]2;aj@wub: ~/Documents/Scripts/Info-Scanners/Scripts]1;..nners/Scripts[0m[27m[24m[J[39m[0m[49m[40m[39m aj@wub [44m[30m[30m ~/Documents/Scripts/Info-Scanners/Scripts [43m[34m[30m  master ● [49m[33m[39m [K[?1h=[?2004h[?2004l
-[1m[7m%[27m[1m[0m                                                                          ]2;aj@wub: ~/Documents/Scripts/Info-Scanners/Scripts]1;..nners/Scripts[0m[27m[24m[J[39m[0m[49m[40m[39m [31m✘[40m[39m aj@wub [44m[30m[30m ~/Documents/Scripts/Info-Scanners/Scripts [43m[34m[30m  master ● [49m[33m[39m [K[?1h=[?2004h[1m[31mb[0m[39m[1m[31mb[1m[31ma[0m[39m[1m[31mb[1m[31ma[1m[31ms[0m[39m[0m[32mb[0m[32ma[0m[32ms[32mh[39m[?1l>[?2004l
-]2;bash]1;bash]0;aj@wub: ~/Documents/Scripts/Info-Scanners/Scripts[01;32maj@wub[00m:[01;34m~/Documents/Scripts/Info-Scanners/Scripts[00m$ i = test
-i: command not found
-]0;aj@wub: ~/Documents/Scripts/Info-Scanners/Scripts[01;32maj@wub[00m:[01;34m~/Documents/Scripts/Info-Scanners/Scripts[00m$ ^C
-]0;aj@wub: ~/Documents/Scripts/Info-Scanners/Scripts[01;32maj@wub[00m:[01;34m~/Documents/Scripts/Info-Scanners/Scripts[00m$ ^C
-]0;aj@wub: ~/Documents/Scripts/Info-Scanners/Scripts[01;32maj@wub[00m:[01;34m~/Documents/Scripts/Info-Scanners/Scripts[00m$ exit
-exit
-[1m[7m%[27m[1m[0m                                                                          ]2;aj@wub: ~/Documents/Scripts/Info-Scanners/Scripts]1;..nners/Scripts[0m[27m[24m[J[39m[0m[49m[40m[39m [31m✘[40m[39m aj@wub [44m[30m[30m ~/Documents/Scripts/Info-Scanners/Scripts [43m[34m[30m  master ● [49m[33m[39m [K[?1h=[?2004h[H[2J[0m[27m[24m[J[39m[0m[49m[40m[39m [31m✘[40m[39m aj@wub [44m[30m[30m ~/Documents/Scripts/Info-Scanners/Scripts [43m[34m[30m  master ● [49m[33m[39m [K
-bracketed-paste-magic:zle:47: not enough arguments for -U
-[0m[27m[24m[J[39m[0m[49m[40m[39m [31m✘[40m[39m aj@wub [44m[30m[30m ~/Documents/Scripts/Info-Scanners/Scripts [43m[34m[30m  master ● [49m[33m[39m [K[1m[31m$[0m[39m[1m[31m$[1m[31mS[0m[39m[1m[31m$[1m[31mS[1m[31mC[0m[39m[1m[31mC[1m[31mR[0m[39m[1m[31mR[1m[31mI[0m[39m [K[A[73C[1m[31mI[1m[31mP[0m[39m[1m[31mP[1m[31mT[0m[39m[1m[31mP[1m[31mT[1m[31mS[0m[39m [4m=[24m [24m [1m[31mP[1m[31mT[0m[39m[0m[39m [1m[31mP[0m[39m[0m[39m [A[72C[1m[31mI[0m[39m [K[A[72C[1m[31mR[0m[39m[K[1B[K[A[73C[1m[31mC[0m[39m[0m[39m [1m[31m$[1m[31mS[0m[39m[0m[39m [1m[31m$[0m[39m[0m[39m [0m[39m [1m[31mR[0m[39m[1m[31mR[1m[31mE[0m[39m[1m[31mR[1m[31mE[1m[31mD[0m[39m[0m[39mR[0m[39mE[0m[39mD=[1m[31mR[1m[31mE[1m[31mD[0m[39m [1m[31mR[1m[31mE[0m[39m[0m[39m [1m[31mR[0m[39m[0m[39m [0m[39m [1m[31mD[0m[39m[1m[31mD[1m[31mI[0m[39m[1m[31mD[1m[31mI[1m[31mR[0m[39m[1m[31mR[1m[31mS[0m[39m[0m[39mD[0m[39mI[0m[39mR[0m[39mS= [Keecho [1m[31m"[0m[39m[1m[31m"[1m[31m/[0m[39m[1m[31m"[0m[39m[0m[39m [1m[31m"[1m[31mb[0m[39m[1m[31mb[1m[31mi[0m[39m[1m[31mi[1m[31mn[0m[39m[1m[31mn[1m[31m"[0m[39m[?1l>[?2004l
-]2;DIRS=echo "bin"]1;"bin"zsh: command not found: bin
-[1m[7m%[27m[1m[0m                                                                          ]2;aj@wub: ~/Documents/Scripts/Info-Scanners/Scripts]1;..nners/Scripts[0m[27m[24m[J[39m[0m[49m[40m[39m [31m✘[40m[39m aj@wub [44m[30m[30m ~/Documents/Scripts/Info-Scanners/Scripts [43m[34m[30m  master ● [49m[33m[39m [K[?1h=[?2004h[1m[31mD[0m[39m[1m[31mD[1m[31mI[0m[39m[1m[31mD[1m[31mI[1m[31mT[0m[39m[1m[31mT[1m[31mR[0m[39m[1m[31mT[0m[39m[0m[39m [1m[31mD[1m[31mI[0m[39m[0m[39m [1m[31mD[1m[31mI[1m[31mR[0m[39m[1m[31mR[1m[31mS[0m[39m[0m[39mD[0m[39mI[0m[39mR[0m[39mS= [K[33m'[39m[33m'[33me[39m[33m'[33me[33mc[39m[33mc[33mh[39m[33mh[33mo[39m[33mo[33m [39m[33m [33m/[39m[33m/[33mb[39m[33mb[33mi[39m[33mi[33mn[39m[39m'[39me[39mc[39mh[39mo[39m [39m/[39mb[39mi[39mn'[?1l>[?2004l
-]2;DIRS='echo /bin' ]1;/bin'[1m[7m%[27m[1m[0m                                                                          ]2;aj@wub: ~/Documents/Scripts/Info-Scanners/Scripts]1;..nners/Scripts[0m[27m[24m[J[39m[0m[49m[40m[39m aj@wub [44m[30m[30m ~/Documents/Scripts/Info-Scanners/Scripts [43m[34m[30m  master ● [49m[33m[39m [K[?1h=[?2004h[1m[31me[0m[39m[1m[31me[1m[31mc[0m[39m[1m[31me[1m[31mc[1m[31mh[0m[39m[0m[32me[0m[32mc[0m[32mh[32mo[39m $D [KIIRS[?1l>[?2004l
-]2;echo $DIRS]1;echoecho /bin
-[1m[7m%[27m[1m[0m                                                                          ]2;aj@wub: ~/Documents/Scripts/Info-Scanners/Scripts]1;..nners/Scripts[0m[27m[24m[J[39m[0m[49m[40m[39m aj@wub [44m[30m[30m ~/Documents/Scripts/Info-Scanners/Scripts [43m[34m[30m  master ● [49m[33m[39m [K[?1h=[?2004h[1m[31mc[0m[39m[0m[32mc[32md[39m [4m~[24m[4m~[4m/[24m[4m/[4mD[24m[24m~[24m/[24mDO [Kc[A[69C[4m~[4m/[4mD[4mo[4mc[4muments[1m[4m/[0m[24m[A[62C[24m~[24m/[24mD[24moc[24mu[24mm[24me[24mn[24mt[24ms[0m[24m/bo[A[60C[4m~[4m/[4mD[4mo[4mc[4mu[4mm[4me[4mn[4mt[4ms[4m/[4mB[4mo[4moks[1m[4m/[0m[24m[4ms[24m[0m[24m [?1l>[?2004l
-]2;cd ~/Documents/Books]1;cd[1m[7m%[27m[1m[0m                                                                          ]2;aj@wub: ~/Documents/Books]1;..cuments/Books[0m[27m[24m[J[39m[0m[49m[40m[39m aj@wub [44m[30m[30m ~/Documents/Books [49m[34m[39m [K[?1h=[?2004h[1m[31mc[0m[39m[0m[32mc[32mp[39m [33m'[39m[33m'[33ml[39m[33ml[33ms[39m[33ms[33m'[39m [4m/[24m[4m/[4mt[24m[4mt[4mm[24m[4mm[4mp[24m[?1l>[?2004l
-]2;cp 'ls' /tmp]1;cpcp: cannot stat 'ls': No such file or directory
-[1m[7m%[27m[1m[0m                                                                          ]2;aj@wub: ~/Documents/Books]1;..cuments/Books[0m[27m[24m[J[39m[0m[49m[40m[39m [31m✘[40m[39m aj@wub [44m[30m[30m ~/Documents/Books [49m[34m[39m [K[?1h=[?2004h[32mcp[39m [33m'ls'[39m [4m/tmp[24m[33m [33m/[24m[33mt[24m[33mm[24m[33mp[39m[24m [33m [33m/[33mt[33mm[33mp[39m[39m [33m [33m/[33mt[33mm[33mp[39m[39m [39m [39m[4m/[39m[4mt[39m[4mm[39m[4mp[24m[39m $[24m [4m/[4mt[4mm[4mp[24m[35m$[35m([39m[24m [4m/[4mt[4mm[4mp[24m[32ml[39m[24m [4m/[4mt[4mm[4mp[24m[32ml[32ms[39m[24m [4m/[4mt[4mm[4mp[24m[35m)[39m[24m [4m/[4mt[4mm[4mp[24m[?1l>[?2004l
-]2;cp $(ls) /tmp]1;cpcp: cannot stat 'Georgia': No such file or directory
-cp: cannot stat 'Weidman': No such file or directory
-cp: cannot stat '-': No such file or directory
-cp: cannot stat 'Penetration': No such file or directory
-cp: cannot stat 'Testing-No': No such file or directory
-cp: cannot stat 'Starch': No such file or directory
-cp: cannot stat 'Press': No such file or directory
-cp: cannot stat '(2014).pdf': No such file or directory
-cp: cannot stat 'Master': No such file or directory
-cp: cannot stat 'Hacker': No such file or directory
-cp: cannot stat 'Draft': No such file or directory
-cp: cannot stat 'Chapters': No such file or directory
-cp: cannot stat 'Master': No such file or directory
-cp: cannot stat 'Hacker': No such file or directory
-cp: cannot stat 'Draft': No such file or directory
-cp: cannot stat 'Chapters.zip': No such file or directory
-cp: cannot stat 'OccupyTheWeb': No such file or directory
-cp: cannot stat '-': No such file or directory
-cp: cannot stat 'Linux': No such file or directory
-cp: cannot stat 'Basics': No such file or directory
-cp: cannot stat 'for': No such file or directory
-cp: cannot stat 'Hackers_': No such file or directory
-cp: cannot stat 'Getting': No such file or directory
-cp: cannot stat 'Started': No such file or directory
-cp: cannot stat 'with': No such file or directory
-cp: cannot stat 'Networking,': No such file or directory
-cp: cannot stat 'Scripting,': No such file or directory
-cp: cannot stat 'and': No such file or directory
-cp: cannot stat 'Security': No such file or directory
-cp: cannot stat 'in': No such file or directory
-cp: cannot stat 'Kali': No such file or directory
-cp: cannot stat '(2018,': No such file or directory
-cp: cannot stat 'No': No such file or directory
-cp: cannot stat 'Starch': No such file or directory
-cp: cannot stat 'Press).pdf': No such file or directory
-cp: cannot stat 'Peter': No such file or directory
-cp: cannot stat 'Kim': No such file or directory
-cp: cannot stat '-': No such file or directory
-cp: cannot stat 'The': No such file or directory
-cp: cannot stat 'Hacker': No such file or directory
-cp: cannot stat 'Playbook': No such file or directory
-cp: cannot stat '2_': No such file or directory
-cp: cannot stat 'Practical': No such file or directory
-cp: cannot stat 'Guide': No such file or directory
-cp: cannot stat 'To': No such file or directory
-cp: cannot stat 'Penetration': No such file or directory
-cp: cannot stat 'Testing-CreateSpace': No such file or directory
-cp: cannot stat 'Independent': No such file or directory
-cp: cannot stat 'Publishing': No such file or directory
-cp: cannot stat 'Platform': No such file or directory
-cp: cannot stat '(2015).pdf': No such file or directory
-cp: -r not specified; omitting directory 'Pirates'
-cp: cannot stat 'The': No such file or directory
-cp: cannot stat 'Hacker': No such file or directory
-cp: cannot stat 'Playbook': No such file or directory
-cp: cannot stat '3': No such file or directory
-cp: cannot stat 'Practical': No such file or directory
-cp: cannot stat 'Guide': No such file or directory
-cp: cannot stat 'To': No such file or directory
-cp: cannot stat 'Penetration': No such file or directory
-cp: cannot stat 'Testing.pdf': No such file or directory
-[1m[7m%[27m[1m[0m                                                                          ]2;aj@wub: ~/Documents/Books]1;..cuments/Books[0m[27m[24m[J[39m[0m[49m[40m[39m [31m✘[40m[39m aj@wub [44m[30m[30m ~/Documents/Books [49m[34m[39m [K[?1h=[?2004h[32mcp[39m [35m$([39m[32mls[39m[35m)[39m [4m/tmp[24m[39m-[35m$[35m([39m[32ml[32ms[39m[35m)[39m[24m [4m/[4mt[4mm[4mp[24m[10D[39mr[35m$[35m([39m[32ml[32ms[39m[35m)[39m[24m [4m/[4mt[4mm[4mp[24m[10D[39m [35m$[35m([39m[32ml[32ms[39m[35m)[39m[24m [4m/[4mt[4mm[4mp[24m[10D[?1l>[?2004l
-]2;cp -r $(ls) /tmp]1;cpcp: cannot stat 'Georgia': No such file or directory
-cp: cannot stat 'Weidman': No such file or directory
-cp: cannot stat '-': No such file or directory
-cp: cannot stat 'Penetration': No such file or directory
-cp: cannot stat 'Testing-No': No such file or directory
-cp: cannot stat 'Starch': No such file or directory
-cp: cannot stat 'Press': No such file or directory
-cp: cannot stat '(2014).pdf': No such file or directory
-cp: cannot stat 'Master': No such file or directory
-cp: cannot stat 'Hacker': No such file or directory
-cp: cannot stat 'Draft': No such file or directory
-cp: cannot stat 'Chapters': No such file or directory
-cp: cannot stat 'Master': No such file or directory
-cp: cannot stat 'Hacker': No such file or directory
-cp: cannot stat 'Draft': No such file or directory
-cp: cannot stat 'Chapters.zip': No such file or directory
-cp: cannot stat 'OccupyTheWeb': No such file or directory
-cp: cannot stat '-': No such file or directory
-cp: cannot stat 'Linux': No such file or directory
-cp: cannot stat 'Basics': No such file or directory
-cp: cannot stat 'for': No such file or directory
-cp: cannot stat 'Hackers_': No such file or directory
-cp: cannot stat 'Getting': No such file or directory
-cp: cannot stat 'Started': No such file or directory
-cp: cannot stat 'with': No such file or directory
-cp: cannot stat 'Networking,': No such file or directory
-cp: cannot stat 'Scripting,': No such file or directory
-cp: cannot stat 'and': No such file or directory
-cp: cannot stat 'Security': No such file or directory
-cp: cannot stat 'in': No such file or directory
-cp: cannot stat 'Kali': No such file or directory
-cp: cannot stat '(2018,': No such file or directory
-cp: cannot stat 'No': No such file or directory
-cp: cannot stat 'Starch': No such file or directory
-cp: cannot stat 'Press).pdf': No such file or directory
-cp: cannot stat 'Peter': No such file or directory
-cp: cannot stat 'Kim': No such file or directory
-cp: cannot stat '-': No such file or directory
-cp: cannot stat 'The': No such file or directory
-cp: cannot stat 'Hacker': No such file or directory
-cp: cannot stat 'Playbook': No such file or directory
-cp: cannot stat '2_': No such file or directory
-cp: cannot stat 'Practical': No such file or directory
-cp: cannot stat 'Guide': No such file or directory
-cp: cannot stat 'To': No such file or directory
-cp: cannot stat 'Penetration': No such file or directory
-cp: cannot stat 'Testing-CreateSpace': No such file or directory
-cp: cannot stat 'Independent': No such file or directory
-cp: cannot stat 'Publishing': No such file or directory
-cp: cannot stat 'Platform': No such file or directory
-cp: cannot stat '(2015).pdf': No such file or directory
-^C
-[1m[7m%[27m[1m[0m                                                                          ]2;aj@wub: ~/Documents/Books]1;..cuments/Books[0m[27m[24m[J[39m[0m[49m[40m[39m [31m✘[40m[39m aj@wub [44m[30m[30m ~/Documents/Books [49m[34m[39m [K[?1h=[?2004h[32mcp[39m -r [35m$([39m[32mls[39m[35m)[39m [4m/tmp[24m[13D[3P[10C   [4mm[24m[24m [4mt[24m[24m [4m/[24m[24m [24m [39m [32ml[39m[39m [39m [39m$[39m  [1m[31mc[0m[39m[39m [0m[39m [1m[31me[0m[39m[1m[31me[1m[31mc[0m[39m[1m[31me[1m[31mc[1m[31mh[0m[39m[0m[32me[0m[32mc[0m[32mh[32mo[39m $[35m$[35m([39m[32ml[39m[32ml[32ms[39m[35m)[39m[?1l>[?2004l
-]2;echo $(ls)]1;echoGeorgia Weidman - Penetration Testing-No Starch Press (2014).pdf Master Hacker Draft Chapters Master Hacker Draft Chapters.zip OccupyTheWeb - Linux Basics for Hackers_ Getting Started with Networking, Scripting, and Security in Kali (2018, No Starch Press).pdf Peter Kim - The Hacker Playbook 2_ Practical Guide To Penetration Testing-CreateSpace Independent Publishing Platform (2015).pdf Pirates pwning-owasp-juice-shop.epub pwning-owasp-juice-shop.pdf The-Hacker-Playbook-2-Practical-Guide-To-Penetration-Testing-By-Peter-Kim-Psycho.Killer.pdf The Hacker Playbook 3 Practical Guide To Penetration Testing.pdf The-Hacker-Playbook-Practical-Guide-To-Penetration-Testing-2014.pdf
-[1m[7m%[27m[1m[0m                                                                          ]2;aj@wub: ~/Documents/Books]1;..cuments/Books[0m[27m[24m[J[39m[0m[49m[40m[39m aj@wub [44m[30m[30m ~/Documents/Books [49m[34m[39m [K[?1h=[?2004h[32mecho[39m [35m$([39m[32mls[39m[35m)[39m[39m [35m)[39m[39m-[35m)[39m[39ma[35m)[39m[39ml[35m)[39m[?1l>[?2004l
-]2;echo $(ls -al)]1;echototal 175536 drwxr-xr-x 4 aj aj 4096 Nov 23 22:39 . drwxr-xr-x 13 aj aj 4096 Jan 29 09:59 .. -rw-r--r-- 1 aj aj 12790301 Nov 22 11:27 Georgia Weidman - Penetration Testing-No Starch Press (2014).pdf drwxr-xr-x 2 aj aj 4096 Oct 17 15:42 Master Hacker Draft Chapters -rw-r--r-- 1 aj aj 29327401 Oct 17 15:45 Master Hacker Draft Chapters.zip -rw-r--r-- 1 aj aj 14935787 Oct 17 15:44 OccupyTheWeb - Linux Basics for Hackers_ Getting Started with Networking, Scri
