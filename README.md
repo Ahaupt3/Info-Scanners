@@ -75,8 +75,5 @@ SQLScan \<IP\>
 ### WinScan
 WinScan \<IP\>
 
-# To-Do
-* create global var file for script ref (edit in one place vs multiple)
-
 # Credits
 https://github.com/21y4d/nmapAutomator (modified version used)
