@@ -17,7 +17,7 @@ errCheck(){
 mkdir /usr/local/bin/Info-Scanners /usr/local/lib/Info-Scanners
 
 for i in "${BINDIR[@]}"; do
-    cp -r $i /usr/local/bin/Info-Scanners
+    cp -r $i /usr/local/bin
     $errCheck
 done
 
