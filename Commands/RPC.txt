@@ -3,3 +3,5 @@ rpcclient -U "" -N $IP
 # enumdomgroups
 # getdompwinfo
 # getusrdompwinfo
+
+bash -c "echo 'enumdomusers' | rpcclient -U '' -N $IP"

@@ -1,1 +1,2 @@
-gobuster -u http://$IP -w /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-small.txt -x php,txt
+gobuster -u http://$IP -w ../../Wordlists/wordlists/directory-list-lowercase-2.3-medium.txt -x php,txt
+# grabber --spider 3 -sxbzijce --url http://$IP

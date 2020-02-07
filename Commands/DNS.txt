@@ -1,0 +1,3 @@
+dnsenum --noreverse $1
+# update wordlist dnsrecon -d $1 -D ../../Wordlists/dnsmap.txt -t std
+dnswalk -r $1

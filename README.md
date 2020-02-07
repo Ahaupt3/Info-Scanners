@@ -11,6 +11,8 @@ Creates basic directory structure for storing notes during an engagement. Best s
 ## InfoScan
 * nmapAutomator (included in dependencies)
 
+## DNSScan
+
 ## EmailScan
 * theharvester
 
@@ -45,6 +47,9 @@ Creates basic directory structure for storing notes during an engagement. Best s
 # Script Usage
 ### InfoScan
 InfoScan \<IP\>
+
+### DNSScan
+DNSScan \<IP\>
 
 ### EmailScan
 EmailScan \<domain\>

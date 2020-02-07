@@ -1,11 +1,14 @@
 #!/bin/bash
-# RPCScan - Al3x
+# TEMPLATE FOR NEW SCAN FILE - CHANGE ALL DNS TO NEW SCAN NAME
+# DNSScan - Al3x
 
 RED='\033[0;31m'
 YELLOW='\033[0;33m'
 GREEN='\033[0;32m'
 IP=$1
-DIR="${IP}/Scans/RPC"
+DIR="${IP}/Scans/DNS"
+SCANTYPE='DNS'
+
 usage(){
 	echo -e "${RED}Usage: $0 <TARGET-IP>"
 	exit 1
@@ -22,11 +25,11 @@ if (( "$#" != 1 )); then
 	usage
 fi
 
-if [[ $1 =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+if [[ $1 =~ (?=^.{5,254}$)(^(?:(?!\d+\.)[a-zA-Z0-9_\-]{1,63}\.?)+(?:[a-zA-Z]{2,})$) ]]; then
 	:
 else
 	echo -e "${RED}"
-	echo -e "${RED}Invalid IP!"
+	echo -e "${RED}Invalid Domain!"
 	echo -e "${RED}"
 	usage
 fi
@@ -35,7 +38,7 @@ if [[ ! -d $DIR ]]; then
     mkdir $DIR
 fi
 
-cd $IP/Scans/RPC
+cd $IP/Scans/DNS
 
 while IFS= read -r CMD
 do
@@ -45,11 +48,11 @@ do
 	$errCheck
 done < ../../Commands/$SCANTYPE.txt
 
-
-echo -e "${RED}Running rpcclient enumdomusers..."
-FILENAME='rpcclient.txt'
-bash -c "echo 'enumdomusers' | rpcclient -U '' -N $IP" >> $FILENAME
+echo -e "${RED}Checking for Vulnerabilities..."
+FILENAME='vulns.txt'
+nmap --script vuln -p445 $IP >> $FILENAME
 $errCheck
+echo "*******************************\n" >> $FILENAME
 
 echo -e "${GREEN}*** ALL SCANS COMPLETE ***"
 
