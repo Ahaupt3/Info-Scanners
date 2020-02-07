@@ -14,11 +14,15 @@ errCheck(){
     fi
 }
 
-mkdir /usr/local/bin/Info-Scanners /usr/local/lib/Info-Scanners
+echo -e "${GREEN}*** SETUP Started ***"
+
+mkdir /usr/local/lib/Info-Scanners
 
 for i in "${BINDIR[@]}"; do
-    cp -r $i /usr/local/bin
+    cd $i
+    cp -r * /usr/local/bin
     $errCheck
+    cd ..
 done
 
 for i in "${LIBDIR[@]}"; do
