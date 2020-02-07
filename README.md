@@ -2,7 +2,7 @@
 Info-Gathering Pen-Test Scanners 
   
 # Summary
-Various scanning scripts built for pen-testing information gathering.
+Various scanning scripts built for pen-testing information gathering. Built around initial service enumeration scripts & commands.
 
 Creates basic directory structure for storing notes during an engagement. Best suited for use in an IDE to quickly review information & updating notes.
 
