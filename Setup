@@ -2,32 +2,31 @@
 # Setup
 # Execute as SUDO
 
-DIRS='/bin /usr/bin'
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+BINDIR=('Dependencies' 'Scripts')
+LIBDIR=('Commands' 'Wordlists')
 
 errCheck(){
     if $? != 0; then
-        echo -e "${RED}Error occurred, couldn't copy to $DIR"
-    else echo -e "${GREEN}Copied $DIR successfully!"
+        echo -e "${RED}Error occurred, couldn't copy to $i"
+    else echo -e "${GREEN}Copied $i successfully!"
     fi
 }
 
-# Move files to /bin /usr/bin
-# Optimize in future by using a loop to iterate cmds
-# Setup Files to Absolute location & update filepaths in scripts
+mkdir /usr/bin/Info-Scanners /usr/lib/Info-Scanners
 
-DIR='Dependencies'
-cd $DIR
-echo -e $DIRS | xargs -n 1 cp -vr *
-$errCheck
-cd ..
+for i in "${BINDIR[@]}"; do
+    cp -r $i /usr/bin/Info-Scanners
+    $errCheck
+done
 
-DIR='Scripts'
-cd $DIR
-echo -e $DIRS | xargs -n 1 cp -vr *
-$errCheck
-cd ..
+for i in "${LIBDIR[@]}"; do
+    cp -r $i /usr/lib/Info-Scanners
+    $errCheck
+done
 
-echo -e '***  SETUP FINISHED  ***'
-echo -e '*** RESTART TERMINAL ***'
+echo -e "${GREEN}***  SETUP FINISHED  ***"
+echo -e "${GREEN}*** RESTART TERMINAL ***"
 
 exit 0
