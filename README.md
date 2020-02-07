@@ -11,14 +11,30 @@ Creates basic directory structure for storing notes during an engagement. Best s
 ## InfoScan
 * nmapAutomator (included in dependencies)
 
+## EmailScan
+* theharvester
+
+## FTPScan
+
+## HTTPScan
+* gobuster
+
+## LinScan
+
+## RPCScan
+* rpcclient
+
 ## SMBScan
 * enum4linux
 * nbtscan
 * nmap
 * nmblookup
-* rpcclient
 * smbclient
 * smbmap
+
+## SQLScan
+
+## WinScan
 
 # Setup/Workflow
 1) Clone Repo
