@@ -43,31 +43,31 @@ Creates basic directory structure for storing notes during an engagement. Best s
 4) Run additional enumeration scripts dependent on findings. (full-automation planned)
 
 # Script Usage
-## InfoScan
+### InfoScan
 InfoScan \<IP\>
 
-## EmailScan
+### EmailScan
 EmailScan \<domain\>
 
-## FTPScan
+### FTPScan
 FTPScan \<IP\>
 
-## HTTPScan
+### HTTPScan
 HTTPScan \<IP\>
 
-## LinScan
+### LinScan
 LinScan \<IP\>
 
-## RPCScan
+### RPCScan
 RPCScan \<IP\>
 
-## SMBScan
+### SMBScan
 SMBScan \<IP\>
 
-## SQLScan
+### SQLScan
 SQLScan \<IP\>
 
-## WinScan
+### WinScan
 WinScan \<IP\>
 
 # Credits
