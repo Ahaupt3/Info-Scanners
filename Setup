@@ -13,6 +13,7 @@ errCheck(){
 
 # Move files to /bin /usr/bin
 # Optimize in future by using a loop to iterate cmds
+# Setup Files to Absolute location & update filepaths in scripts
 
 DIR='Dependencies'
 cd $DIR

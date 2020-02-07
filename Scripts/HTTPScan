@@ -1,13 +1,12 @@
 #!/bin/bash
-# TEMPLATE FOR NEW SCAN FILE - CHANGE ALL ***NEW*** TO NEW SCAN NAME
-# ***New***Scan - Al3x
+# HTTPScan - Al3x
 
 RED='\033[0;31m'
 YELLOW='\033[0;33m'
 GREEN='\033[0;32m'
 IP=$1
-DIR="${IP}/Scans/***NEW***"
-SCANTYPE='***NEW***'
+DIR="${IP}/Scans/HTTP"
+SCANTYPE='HTTP'
 
 usage(){
 	echo -e "${RED}Usage: $0 <TARGET-IP>"
@@ -38,7 +37,7 @@ if [[ ! -d $DIR ]]; then
     mkdir $DIR
 fi
 
-cd $IP/Scans/***NEW***
+cd $IP/Scans/HTTP
 
 while IFS= read -r CMD
 do
@@ -50,7 +49,6 @@ done < ../../Commands/$SCANTYPE.txt
 
 echo -e "${RED}Checking for Vulnerabilities..."
 FILENAME='vulns.txt'
-nmap --script vuln -p445 $IP >> $FILENAME
 $errCheck
 echo "*******************************\n" >> $FILENAME
 

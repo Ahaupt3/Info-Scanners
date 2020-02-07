@@ -1,14 +1,11 @@
 #!/bin/bash
-# TEMPLATE FOR NEW SCAN FILE - CHANGE ALL ***NEW*** TO NEW SCAN NAME
-# ***New***Scan - Al3x
+# LinScan - Al3x
 
 RED='\033[0;31m'
 YELLOW='\033[0;33m'
 GREEN='\033[0;32m'
 IP=$1
-DIR="${IP}/Scans/***NEW***"
-SCANTYPE='***NEW***'
-
+DIR="${IP}/Scans/Linux"
 usage(){
 	echo -e "${RED}Usage: $0 <TARGET-IP>"
 	exit 1
@@ -38,21 +35,9 @@ if [[ ! -d $DIR ]]; then
     mkdir $DIR
 fi
 
-cd $IP/Scans/***NEW***
+cd $IP/Scans/Linux
 
-while IFS= read -r CMD
-do
-	echo -e "${RED}Running $(echo "$CMD" | awk '{print $1;}')..."
-	FILENAME="$(echo "$CMD" | awk '{print $1;}').txt"
-	$CMD >> $FILENAME
-	$errCheck
-done < ../../Commands/$SCANTYPE.txt
-
-echo -e "${RED}Checking for Vulnerabilities..."
-FILENAME='vulns.txt'
-nmap --script vuln -p445 $IP >> $FILENAME
-$errCheck
-echo "*******************************\n" >> $FILENAME
+# Optimize in future by using a loop to iterate cmds & save files
 
 echo -e "${GREEN}*** ALL SCANS COMPLETE ***"
 

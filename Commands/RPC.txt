@@ -1,0 +1,5 @@
+rpcclient -U "" -N $IP
+# enumdomusers
+# enumdomgroups
+# getdompwinfo
+# getusrdompwinfo

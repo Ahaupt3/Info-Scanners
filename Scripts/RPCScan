@@ -1,14 +1,11 @@
 #!/bin/bash
-# TEMPLATE FOR NEW SCAN FILE - CHANGE ALL ***NEW*** TO NEW SCAN NAME
-# ***New***Scan - Al3x
+# RPCScan - Al3x
 
 RED='\033[0;31m'
 YELLOW='\033[0;33m'
 GREEN='\033[0;32m'
 IP=$1
-DIR="${IP}/Scans/***NEW***"
-SCANTYPE='***NEW***'
-
+DIR="${IP}/Scans/RPC"
 usage(){
 	echo -e "${RED}Usage: $0 <TARGET-IP>"
 	exit 1
@@ -38,7 +35,7 @@ if [[ ! -d $DIR ]]; then
     mkdir $DIR
 fi
 
-cd $IP/Scans/***NEW***
+cd $IP/Scans/RPC
 
 while IFS= read -r CMD
 do
@@ -48,11 +45,19 @@ do
 	$errCheck
 done < ../../Commands/$SCANTYPE.txt
 
-echo -e "${RED}Checking for Vulnerabilities..."
-FILENAME='vulns.txt'
-nmap --script vuln -p445 $IP >> $FILENAME
+echo -e "${RED}Running rpcclient..."
+FILENAME='rpcclient.txt'
+rpcclient -U "" -N $IP >> $FILENAME
+# enumdomusers
+# enumdomgroups
+# getdompwinfo
+# getusrdompwinfo
 $errCheck
-echo "*******************************\n" >> $FILENAME
+
+echo -e "${RED}Running rpcclient enumdomusers..."
+FILENAME='rpcclient.txt'
+bash -c "echo 'enumdomusers' | rpcclient -U '' -N $IP" >> $FILENAME
+$errCheck
 
 echo -e "${GREEN}*** ALL SCANS COMPLETE ***"
 

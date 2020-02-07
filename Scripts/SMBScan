@@ -6,6 +6,8 @@ YELLOW='\033[0;33m'
 GREEN='\033[0;32m'
 IP=$1
 DIR="${IP}/Scans/SMB"
+SCANTYPE='SMB'
+
 usage(){
 	echo -e "${RED}Usage: $0 <TARGET-IP>"
 	exit 1
@@ -37,48 +39,17 @@ fi
 
 cd $IP/Scans/SMB
 
-# Optimize in future by using a loop to iterate cmds & save files
-
-echo -e "${RED}Running nbtscan..."
-FILENAME=nbtscan.txt
-nbtscan -r $IP/24 >> $FILENAME
-$errCheck
-
-echo -e "${RED}Running nmblookup..."
-FILENAME=nmblookup.txt
-nmblookup -A $IP >> $FILENAME
-$errCheck
-
-echo -e "${RED}Running enum4linux..."
-FILENAME=enum4linux.txt
-enum4linux -a $IP >> $FILENAME
-$errCheck
-enum4linux -o $IP >> $FILENAME
-$errCheck
-
-echo -e "${RED}Running smbmap..."
-FILENAME=smbmap.txt
-smbmap -H $IP >> $FILENAME
-$errCheck
-
-echo -e "${RED}Running smbclient..."
-FILENAME=smbclient.txt
-smbclient -L $IP >> $FILENAME
-$errCheck
-
-echo -e "${RED}Running rpcclient enumdomusers..."
-FILENAME=rpcclient.txt
-bash -c "echo 'enumdomusers' | rpcclient -U '' -N $IP" >> $FILENAME
-$errCheck
-
-echo -e "${RED}Running nmap..."
-FILENAME=nmap.txt
-nmap --script smb-enum-shares -p 139,445 $IP >> $FILENAME
-$errCheck
+while IFS= read -r CMD
+do
+	echo -e "${RED}Running $(echo "$CMD" | awk '{print $1;}')..."
+	FILENAME="$(echo "$CMD" | awk '{print $1;}').txt"
+	$CMD >> $FILENAME
+	$errCheck
+done < ../../Commands/$SCANTYPE.txt
 
 echo -e "${RED}Checking for Vulnerabilities..."
-FILENAME=vulns.txt
-nmap --script smb-vuln* -p 139,445 $IP >> $FILENAME
+FILENAME='vulns.txt'
+nmap --script vuln -p445 $IP >> $FILENAME
 $errCheck
 echo "*******************************\n" >> $FILENAME
 

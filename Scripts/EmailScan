@@ -1,0 +1,49 @@
+#!/bin/bash
+# EmailScan - Al3x
+
+RED='\033[0;31m'
+YELLOW='\033[0;33m'
+GREEN='\033[0;32m'
+IP=$1
+DIR="${IP}/Scans/Email
+usage(){
+	echo -e "${RED}Usage: $0 <domain>"
+	exit 1
+}
+
+errCheck(){
+    if $? != 0; then
+        echo -e "${RED}Error occurred, moving on..."
+    else echo -e "${GREEN}Saved to $FILENAME"
+    fi
+}
+
+if (( "$#" != 1 )); then
+	usage
+fi
+
+if [[ $1 =~ (?=^.{5,254}$)(^(?:(?!\d+\.)[a-zA-Z0-9_\-]{1,63}\.?)+(?:[a-zA-Z]{2,})$) ]]; then
+	:
+else
+	echo -e "${RED}"
+	echo -e "${RED}Invalid Domain!"
+	echo -e "${RED}"
+	usage
+fi
+
+if [[ ! -d $DIR ]]; then
+    mkdir $DIR
+fi
+
+cd $IP/Scans/Email
+
+# Optimize in future by using a loop to iterate cmds & save files
+echo -e "${RED}Running theharvester..."
+FILENAME='theharvester.txt'
+theharvester -d $1 -b google >> $FILENAME
+$errCheck
+,
+
+echo -e "${GREEN}*** ALL SCANS COMPLETE ***"
+
+exit 0
