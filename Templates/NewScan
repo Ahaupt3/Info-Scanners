@@ -2,10 +2,7 @@
 # TEMPLATE FOR NEW SCAN FILE - CHANGE ALL ***NEW*** TO NEW SCAN NAME
 # ***New***Scan - Al3x
 
-while IFS= read -r VAR
-do
-	VAR
-done < $HOMEDIR/Misc/globalvar.text
+source /usr/local/lib/Info-Scanners/Misc/globalvar.txt
 
 DIR="$1/Scans/***NEW***"
 SCANTYPE='***NEW***'

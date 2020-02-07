@@ -1,10 +1,8 @@
 #!/bin/bash
 # LinScan - Al3x
 
-while IFS= read -r VAR
-do
-	echo $VAR
-done < /usr/local/lib/Info-Scanners/Misc/globalvar.txt
+source /usr/local/lib/Info-Scanners/Misc/globalvar.txt
+
 
 DIR="${IP}/Scans/Linux"
 
