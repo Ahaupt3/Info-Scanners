@@ -3,8 +3,8 @@
 
 while IFS= read -r VAR
 do
-	VAR
-done < $HOMEDIR/Misc/globalvar.text
+	echo $VAR
+done < /usr/local/lib/Info-Scanners/Misc/globalvar.txt
 
 DIR="$1/Scans/FTP"
 SCANTYPE='FTP'
