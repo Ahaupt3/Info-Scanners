@@ -14,15 +14,15 @@ errCheck(){
     fi
 }
 
-mkdir /usr/bin/Info-Scanners /usr/lib/Info-Scanners
+mkdir /usr/local/bin/Info-Scanners /usr/local/lib/Info-Scanners
 
 for i in "${BINDIR[@]}"; do
-    cp -r $i /usr/bin/Info-Scanners
+    cp -r $i /usr/local/bin/Info-Scanners
     $errCheck
 done
 
 for i in "${LIBDIR[@]}"; do
-    cp -r $i /usr/lib/Info-Scanners
+    cp -r $i /usr/local/lib/Info-Scanners
     $errCheck
 done
 
