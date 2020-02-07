@@ -46,8 +46,29 @@ Creates basic directory structure for storing notes during an engagement. Best s
 ## InfoScan
 InfoScan \<IP\>
 
+## EmailScan
+EmailScan \<domain\>
+
+## FTPScan
+FTPScan \<IP\>
+
+## HTTPScan
+HTTPScan \<IP\>
+
+## LinScan
+LinScan \<IP\>
+
+## RPCScan
+RPCScan \<IP\>
+
 ## SMBScan
 SMBScan \<IP\>
+
+## SQLScan
+SQLScan \<IP\>
+
+## WinScan
+WinScan \<IP\>
 
 # Credits
 https://github.com/21y4d/nmapAutomator (modified version used)
