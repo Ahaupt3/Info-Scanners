@@ -1,5 +1,5 @@
 #!/bin/bash
-# SMBScan - Al3x
+# SMBScan - Ahaupt3
 
 source /usr/local/lib/Info-Scanners/Misc/globalvar.txt
 

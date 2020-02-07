@@ -1,6 +1,6 @@
 #!/bin/bash
 # TEMPLATE FOR NEW SCAN FILE - CHANGE ALL ***NEW*** TO NEW SCAN NAME
-# ***New***Scan - Al3x
+# ***New***Scan - Ahaupt3
 
 source /usr/local/lib/Info-Scanners/Misc/globalvar.txt
 
