@@ -1,11 +1,14 @@
 #!/bin/bash
 # EmailScan - Al3x
 
-RED='\033[0;31m'
-YELLOW='\033[0;33m'
-GREEN='\033[0;32m'
-IP=$1
-DIR="${IP}/Scans/Email
+while IFS= read -r VAR
+do
+	VAR
+done < $HOMEDIR/Misc/globalvar.text
+
+DIR="$1/Scans/Email" # FIX THIS, $1 = domain not IP
+SCANTYPE='Email'
+
 usage(){
 	echo -e "${RED}Usage: $0 <domain>"
 	exit 1
@@ -35,14 +38,13 @@ if [[ ! -d $DIR ]]; then
     mkdir $DIR
 fi
 
-cd $IP/Scans/Email
+cd $1/Scans/Email # FIX THIS, $1 = domain not IP
 
 # Optimize in future by using a loop to iterate cmds & save files
 echo -e "${RED}Running theharvester..."
 FILENAME='theharvester.txt'
 theharvester -d $1 -b google >> $FILENAME
 $errCheck
-,
 
 echo -e "${GREEN}*** ALL SCANS COMPLETE ***"
 

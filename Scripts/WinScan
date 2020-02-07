@@ -1,11 +1,14 @@
 #!/bin/bash
 # WinScan - Al3x
 
-RED='\033[0;31m'
-YELLOW='\033[0;33m'
-GREEN='\033[0;32m'
-IP=$1
+while IFS= read -r VAR
+do
+	VAR
+done < $HOMEDIR/Misc/globalvar.text
+
 DIR="${IP}/Scans/Windows"
+SCANTYPE='Win'
+
 usage(){
 	echo -e "${RED}Usage: $0 <TARGET-IP>"
 	exit 1
@@ -35,7 +38,7 @@ if [[ ! -d $DIR ]]; then
     mkdir $DIR
 fi
 
-cd $IP/Scans/Windows
+cd $1/Scans/Windows
 
 # Optimize in future by using a loop to iterate cmds & save files
 

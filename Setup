@@ -14,7 +14,7 @@ errCheck(){
     fi
 }
 
-echo -e "${GREEN}*** SETUP Started ***"
+echo -e "${GREEN}*** SETUP STARTED ***"
 
 mkdir /usr/local/lib/Info-Scanners
 
@@ -31,6 +31,5 @@ for i in "${LIBDIR[@]}"; do
 done
 
 echo -e "${GREEN}***  SETUP FINISHED  ***"
-echo -e "${GREEN}*** RESTART TERMINAL ***"
 
 exit 0

@@ -1,10 +1,11 @@
 #!/bin/bash
 # InfoScan - Al3x
 
-RED='\033[0;31m'
-YELLOW='\033[0;33m'
-GREEN='\033[0;32m'
-IP=$1
+while IFS= read -r VAR
+do
+	VAR
+done < $HOMEDIR/Misc/globalvar.text
+
 DIRS=('Exploits' 'Findings' 'Scans')
 
 usage(){
@@ -33,25 +34,22 @@ else
 fi
 
 if [[ ! -d $1 ]]; then
-    mkdir $IP
+    mkdir $1
 fi
 
 for d in ${DIRS[@]}; do
     if [[ ! -d $d ]]; then
-        mkdir $IP/$d
+        mkdir $1/$d
     fi
 done
 
-mkdir $IP/Scans/nmapAutomator
-cd $IP/Scans/nmapAutomator
-nmapAutomator $IP All
+mkdir $1/Scans/nmapAutomator
+cd $1/Scans/nmapAutomator
+nmapAutomator $1 All
 $errCheck
 
-# nmap -sV -sT -sC $IP -o nmap.txt
+# nmap -sV -sT -sC $1 -o nmap.txt
 
 echo -e '*** ALL SCANS COMPLETE ***'
 
 exit 0
-
-# To-Do
-# Parse data to build quick-view profile
