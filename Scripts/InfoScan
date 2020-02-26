@@ -17,6 +17,11 @@ errCheck(){
     fi
 }
 
+if [[ $EUID -ne 0 ]]; then
+   echo -e "${RED}This script must be run as root!" 
+   exit 1
+fi
+
 if (( "$#" != 1 )); then
 	usage
 fi
@@ -35,12 +40,14 @@ if [[ ! -d $1 ]]; then
 fi
 
 for DIR in ${DIRS[@]}; do
-    if [[ ! -d $DIR ]]; then
+    if [[ ! -d $1/$DIR ]]; then
         mkdir $1/$DIR
     fi
 done
 
-mkdir $1/Scans/nmapAutomator
+if [[ ! -d $1/Scans/nmapAutomator ]]; then
+    mkdir $1/Scans/nmapAutomator
+fi
 cd $1/Scans/nmapAutomator
 nmapAutomator $1 All
 $errCheck
