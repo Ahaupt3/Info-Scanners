@@ -3,7 +3,7 @@
 
 source /usr/local/lib/Info-Scanners/Misc/globalvar.txt
 
-DIRS=('Exploits' 'Findings' 'Scans')
+DIRS=('Exploits' 'Findings' 'Misc' 'Notes' 'Scans')
 
 usage(){
 	echo -e "${RED}Usage: $0 <TARGET-IP>"
