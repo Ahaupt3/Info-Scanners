@@ -10,13 +10,6 @@ usage(){
 	exit 1
 }
 
-errCheck(){
-    if $? != 0; then
-        echo -e "${RED}Error occurred, moving on..."
-    else echo -e "${GREEN}$0 Scan Successful!"
-    fi
-}
-
 if [[ $EUID -ne 0 ]]; then
    echo -e "${RED}This script must be run as root!" 
    exit 1
@@ -35,6 +28,8 @@ else
 	usage
 fi
 
+echo -e "${GREEN}*** STARTING SCANS ***"
+
 if [[ ! -d $1 ]]; then
     mkdir $1
 fi
@@ -50,10 +45,9 @@ if [[ ! -d $1/Scans/nmapAutomator ]]; then
 fi
 cd $1/Scans/nmapAutomator
 nmapAutomator $1 All
-$errCheck
 
-# nmap -sV -sT -sC $1 -o nmap.txt
+chown -R $SUDO_USER ../../../$1
 
-echo -e '*** ALL SCANS COMPLETE ***'
+echo -e "${GREEN}*** ALL SCANS COMPLETE ***
 
 exit 0
