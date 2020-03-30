@@ -1,2 +1,0 @@
-gobuster -u http://$IP -w ../../Wordlists/wordlists/directory-list-lowercase-2.3-medium.txt -x php,txt
-# grabber --spider 3 -sxbzijce --url http://$IP

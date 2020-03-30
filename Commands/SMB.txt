@@ -1,8 +1,0 @@
-nbtscan -r $IP/24
-nmblookup -A $IP
-enum4linux -a $IP
-enum4linux -o $IP
-smbmap -H $IP
-smbclient -L $IP
-bash -c "echo 'enumdomusers' | rpcclient -U '' -N $IP"
-nmap --script smb-enum-shares -p 139,445 $IP

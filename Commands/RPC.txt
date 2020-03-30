@@ -1,7 +1,0 @@
-rpcclient -U "" -N $IP
-# enumdomusers
-# enumdomgroups
-# getdompwinfo
-# getusrdompwinfo
-
-bash -c "echo 'enumdomusers' | rpcclient -U '' -N $IP"

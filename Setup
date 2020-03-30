@@ -5,7 +5,7 @@
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 BINDIR=('Dependencies' 'Scripts')
-LIBDIR=('Commands' 'Misc' 'Wordlists')
+LIBDIR=('Misc')
 
 errCheck(){
     if $? != 0; then
