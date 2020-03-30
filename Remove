@@ -1,0 +1,24 @@
+#!/bin/bash
+# Remove
+# Execute as SUDO
+
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+BINDIR=('Dependencies' 'Scripts')
+LIBDIR=('Misc')
+
+echo -e "${GREEN} Removing InfoScanners..."
+
+for i in "${BINDIR[@]}"; do
+    cd $i
+    for i in $(ls); do
+        sudo rm -r /usr/local/bin/$i
+    done
+    cd ..
+done
+
+sudo rm -r /usr/local/lib/Info-Scanners
+
+echo -e "${GREEN} InfoScanners Removed!"
+
+exit 0
