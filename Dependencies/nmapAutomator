@@ -239,7 +239,7 @@ fi
 if [ ! -f /usr/share/nmap/scripts/vulners.nse ]; then
 	echo -e "${RED}Please install 'vulners.nse' nmap script:"
 	echo -e "${RED}https://github.com/vulnersCom/nmap-vulners"
-        echo -e "${RED}"
+        
         echo -e "${RED}Skipping CVE scan!"
 	echo -e "${NC}"
 else    
@@ -498,9 +498,9 @@ fi
 if [[ $1 =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
 	:
 else
-	echo -e "${RED}"
+	
 	echo -e "${RED}Invalid IP!"
-	echo -e "${RED}"
+	
 	usage
 fi
 
@@ -534,8 +534,8 @@ if [[ "$2" =~ ^(Quick|Basic|UDP|Full|Vulns|Recon|All)$ ]]; then
 	
 	footer
 else
-	echo -e "${RED}"
+	
 	echo -e "${RED}Invalid Type!"
-	echo -e "${RED}"
+	
 	usage
 fi

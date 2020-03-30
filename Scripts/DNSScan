@@ -30,9 +30,9 @@ fi
 if [[ $1 =~ (?=^.{5,254}$)(^(?:(?!\d+\.)[a-zA-Z0-9_\-]{1,63}\.?)+(?:[a-zA-Z]{2,})$) ]]; then
 	:
 else
-	echo -e "${RED}"
+	
 	echo -e "${RED}Invalid Domain!"
-	echo -e "${RED}"
+	
 	usage
 fi
 
@@ -46,7 +46,7 @@ while IFS= read -r CMD
 do
 	echo -e "${RED}Running $(echo "$CMD" | awk '{print $1;}')..."
 	FILENAME="$(echo "$CMD" | awk '{print $1;}').txt"
-	$CMD >> $FILENAME
+	sudo $CMD >> $FILENAME
 	$errCheck
 done < $HOMEDIR/Commands/$SCANTYPE.txt
 
